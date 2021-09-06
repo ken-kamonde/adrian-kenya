@@ -3,24 +3,19 @@
 .tails-details {
     padding: 0;
     margin: auto;
-    max-width: 1000px;
     /* flexbox */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around center;
 }
 
-label {
-    color: #435960;
-    font-weight: bold;
+h2 {
+    text-align: center;
 }
 
-input {
-    font-size: 1em;
-    padding: .5rem;
+.cocktail-card {
+    margin: 1% 15% 0% 15%;
+    background-color: #3f525c;
 }
 
 button {
@@ -39,10 +34,4 @@ button:disabled {
     background-color: #eee;
     color: #ccc;
     cursor: auto;
-}
-
-.cocktail-card {
-    max-width: 400px;
-    margin-bottom: 8px;
-    background-color: #3f525c;
 }
