@@ -1,0 +1,20 @@
+<div class="cocktails">
+
+    <mat-card class="search-cocktail">
+        <mat-label>Search Cocktail:</mat-label>
+        <input matInput id="cocktail-name" (keyup)="filterCocktails($event)" placeholder="name">
+    </mat-card>
+
+    <h2>My Cocktails</h2>
+
+    <mat-card class="cocktail-card" *ngFor="let cocktail of drink" (click)="goCocktails(cocktail)">
+        <mat-card-title-group>
+            <mat-card-title>{{ cocktail.strDrink }}</mat-card-title>
+            <mat-card-subtitle>{{ cocktail.idDrink }}</mat-card-subtitle>
+            <img mat-card-sm-image [src]="cocktail.strDrinkThumb" />
+        </mat-card-title-group>
+        <mat-card-content>
+            {{ cocktail.strInstructions }}
+        </mat-card-content>
+    </mat-card>
+</div>

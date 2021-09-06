@@ -1,0 +1,48 @@
+/* CocktailDetailComponent's private CSS styles */
+
+.tails-details {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    color: #435960;
+    font-weight: bold;
+}
+
+input {
+    font-size: 1em;
+    padding: .5rem;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+}
+
+.cocktail-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+    background-color: #3f525c;
+}

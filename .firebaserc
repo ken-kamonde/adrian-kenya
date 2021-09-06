@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "adrian-kenya": {
+      "hosting": {
+        "adrian-kenya": [
+          "adrian-kenya"
+        ]
+      }
+    }
+  }
+}

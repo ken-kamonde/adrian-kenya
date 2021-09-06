@@ -1,0 +1,27 @@
+/* CocktailsComponent's private CSS styles */
+
+.search-cocktail {
+    margin: 1% 15% 0% 15%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cocktails {
+    padding: 0;
+    margin: auto;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around center;
+}
+
+.cocktail-card {
+    margin: 1% 15% 0% 15%;
+    background-color: #3f525c;
+}
+
+.cocktail-card:hover {
+    background-color: #706d6d;
+}

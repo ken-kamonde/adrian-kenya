@@ -1,0 +1,25 @@
+<div *ngIf="drink" class="tails-details">
+    <h2>{{ drink.strDrink | uppercase }} Details</h2>
+
+    <mat-card class="cocktail-card">
+        <mat-card-title-group>
+            <mat-card-title>{{ drink.strDrink }}</mat-card-title>
+            <mat-card-subtitle>{{ drink.idDrink }}</mat-card-subtitle>
+            <img mat-card-sm-image [src]="drink.strDrinkThumb" />
+        </mat-card-title-group>
+
+        <mat-card-content>
+            <ul>
+                <li>{{ drink.strIngredient1 }}</li>
+                <li>{{ drink.strIngredient2 }}</li>
+                <li>{{ drink.strIngredient3 }}</li>
+            </ul>
+
+            <p> {{ drink.strInstructions }} </p>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button (click)="goBack()">go back</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
